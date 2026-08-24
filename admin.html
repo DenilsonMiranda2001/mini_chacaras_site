@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gerenciador de Banners | Mini Chácaras do Lago Sul</title>
+    <meta name="robots" content="noindex,nofollow" />
+    <link rel="icon" href="assets/logo-mini-chacaras.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=20260824d" />
+  </head>
+  <body class="admin-page">
+    <main class="admin-shell">
+      <div class="admin-top">
+        <div>
+          <p class="eyebrow">Administração local</p>
+          <h1>Gerenciador de Banners</h1>
+          <p>Cadastro mínimo para este projeto estático. Os banners ficam salvos no navegador via localStorage.</p>
+        </div>
+        <a class="button primary" href="index.html">Ver portal</a>
+      </div>
+      <form class="admin-form" data-banner-form>
+        <input type="hidden" name="id" />
+        <div class="admin-grid">
+          <label class="full">Imagem desktop<input type="file" name="imageFile" accept="image/png,image/jpeg,image/webp" /></label>
+          <label class="full">Imagem mobile opcional<input type="file" name="mobileImageFile" accept="image/png,image/jpeg,image/webp" /></label>
+          <label class="full">Texto alternativo<input name="alt" required placeholder="Descreva a imagem do banner" /></label>
+          <label>Chamada superior<input name="kicker" placeholder="Portal oficial" /></label>
+          <label>Prioridade<select name="priority"><option value="high">Alta</option><option value="medium">Média</option><option value="normal" selected>Normal</option></select></label>
+          <label class="full">Título<input name="title" required placeholder="Um lugar para viver, conviver e construir histórias." /></label>
+          <label class="full">Texto complementar<textarea name="text" placeholder="Texto curto opcional"></textarea></label>
+          <label>CTA<input name="ctaLabel" placeholder="Saiba mais" /></label>
+          <label>Link do CTA<input name="ctaUrl" placeholder="#condominio ou https://..." /></label>
+          <label>Status<select name="status"><option value="active">Ativo</option><option value="inactive">Inativo</option></select></label>
+          <label>Ordem<input name="order" type="number" value="1" min="0" /></label>
+          <label>Data inicial<input name="startDate" type="date" /></label>
+          <label>Data final<input name="endDate" type="date" /></label>
+        </div>
+        <div class="admin-actions">
+          <button class="button primary" type="submit">Salvar banner</button>
+          <button class="button" type="reset" data-new-banner>Novo banner</button>
+          <button class="button danger" type="button" data-seed-water>Simular falta de água</button>
+        </div>
+      </form>
+      <section class="admin-list" data-banner-list aria-label="Banners cadastrados"></section>
+    </main>
+    <script src="admin.js?v=20260824d"></script>
+  </body>
+</html>
