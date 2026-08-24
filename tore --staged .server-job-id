@@ -1,0 +1,20 @@
+ .server-job-id                 |   1 [32m+[m
+ admin.html                     |  51 [32m+++++++++++[m
+ admin.js                       | 139 [32m++++++++++++++++++++++++++++++[m
+ assets/foto-portaria.jpg       | Bin [31m0[m -> [32m175070[m bytes
+ assets/logo-mini-chacaras.jpg  | Bin [31m0[m -> [32m39271[m bytes
+ assets/noticia-memorial-jk.jpg | Bin [31m0[m -> [32m112859[m bytes
+ index.html                     | 191 [32m+++++++++++++++++++++++++++++++++++++++++[m
+ robots.txt                     |   4 [32m+[m
+ screenshots-1440.png           | Bin [31m0[m -> [32m2182901[m bytes
+ screenshots-320.png            | Bin [31m0[m -> [32m911529[m bytes
+ screenshots-390.png            | Bin [31m0[m -> [32m996255[m bytes
+ screenshots-admin.png          | Bin [31m0[m -> [32m124059[m bytes
+ screenshots-final-1440.png     | Bin [31m0[m -> [32m1953118[m bytes
+ screenshots-final-320.png      | Bin [31m0[m -> [32m732250[m bytes
+ screenshots-final-390.png      | Bin [31m0[m -> [32m816245[m bytes
+ screenshots-news.png           | Bin [31m0[m -> [32m317661[m bytes
+ script.js                      | 131 [32m++++++++++++++++++++++++++++[m
+ sitemap.xml                    |   7 [32m++[m
+ styles.css                     | 156 [32m+++++++++++++++++++++++++++++++++[m
+ 19 files changed, 680 insertions(+)
